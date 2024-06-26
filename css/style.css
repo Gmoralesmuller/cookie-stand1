@@ -42,32 +42,37 @@ hr {
     height: 1px;
     background-color: black;
 }
-section.location {
+section.fill {
     padding-top: 20px;
     padding-bottom: 15px;
+    padding-left: 40px;
 }
 
-section.location h2 {
+section.fill h2 {
     font-family: "Righteous", sans-serif;
     font-style: bold;
     color: black
 }
 
-section.location p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding-left: 30px;
-
+p{
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 55px;
+    color: gray;
 }
 
 footer {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: gray;
+    background-color: gainsboro;
     padding: 30px;
-    margin: 0;
+    margin: 30;
     width: 100%;
     text-align: center;
 }
 
+p.footer{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black; 
+}
 section h2 {
     font-family: "Righteous", sans-serif;
     font-style: bold;
@@ -75,13 +80,27 @@ section h2 {
     padding-left: 30px;
 }
 
-section ul {
-    list-style-type: none;
-    font-family: Arial, Helvetica, sans-serif;
-    color: gray
-}
-main.tabla{
+main.tabla {
     flex: 1;
     padding: 50px;
     padding-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: smaller;
+    align-content: center;
+    border: 2px solid black;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    font-weight: bold;
 }
