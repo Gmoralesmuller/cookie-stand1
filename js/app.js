@@ -186,7 +186,7 @@ function runSales(){
   }
   root.appendChild(table);
 }
-
+runSales();
 
 function run(){
   for(let i =0;i< stores.length; i++){
@@ -194,5 +194,5 @@ function run(){
     renderIndex(stores[i]);
   }
 }
-
+run();
 
