@@ -2,4 +2,4 @@
 
 ## Lighthouse Lab07
 
-!(Lighthouse)[../img/Lighthousesalmon]
+![Lighthouse](../cookie-stand1/img/Lighthousesalmon.png)
