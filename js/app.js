@@ -142,7 +142,7 @@ function render(store){
   td.textContent = total;
   tr.appendChild(td);
   return tr;
-};
+}
 
 function renderIndex(store){
 
