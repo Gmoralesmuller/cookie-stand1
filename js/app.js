@@ -1,5 +1,7 @@
 'use strict';
 
+
+const hours=['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm'];
 function Location(locationName,
   minClientPerHour,
   maxClientPerHour,
@@ -100,7 +102,7 @@ const lima = new Location('Lima', 2, 16, 4.6, [], 'Ca.Gral. Borgoño cuadra 8, M
 // };
 
 
-const hours=['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm'];
+
 const stores=[seattle,tokyo,dubai,paris, lima];
 
 function random(min, max){
