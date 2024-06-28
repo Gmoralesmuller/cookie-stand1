@@ -186,7 +186,9 @@ function runSales(){
     const tr = render(stores[i]);
     table.appendChild(tr);
   }
-  root.appendChild(table);
+  if (root) {
+    root.appendChild(table);
+  }
 }
 runSales();
 
