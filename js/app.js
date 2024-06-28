@@ -142,7 +142,7 @@ function render(store){
   td.textContent = total;
   tr.appendChild(td);
   return tr;
-};
+}
 
 function renderIndex(store){
 
@@ -186,7 +186,9 @@ function runSales(){
     const tr = render(stores[i]);
     table.appendChild(tr);
   }
-  root.appendChild(table);
+  if (root) {
+    root.appendChild(table);
+  }
 }
 runSales();
 
