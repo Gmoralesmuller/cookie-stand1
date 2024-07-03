@@ -186,11 +186,46 @@ function runSales(){
     const tr = render(stores[i]);
     table.appendChild(tr);
   }
+  const tfoot = document.createElement('tfoot');
+  tfoot.id = 'resumen';
+  table.appendChild(tfoot);
   if (root) {
     root.appendChild(table);
   }
+  renderTotales();
 }
 runSales();
+
+function renderTotales() {
+  const tfoot = document.getElementById('resumen');
+  const row = document.createElement('tr');
+  const nameCell = document.createElement('th');
+  nameCell.textContent = 'Hourly Totals for All Locations';
+  row.appendChild(nameCell);
+
+  let totalDailyCookies = 0;
+  const totalesHora = new Array(hours.length).fill(0);
+
+  for (let i = 0; i < stores.length; i++) {
+    const store = stores[i];
+    for (let j = 0; j < hours.length; j++) {
+      totalesHora[j] += store.cookieEachHour[j];
+      totalDailyCookies += store.cookieEachHour[j];
+    }
+  }
+
+  for (let i = 0; i < totalesHora.length; i++) {
+    const cell = document.createElement('td');
+    cell.textContent = totalesHora[i];
+    row.appendChild(cell);
+  }
+
+  const totalDailyCell = document.createElement('td');
+  totalDailyCell.textContent = totalDailyCookies;
+  row.appendChild(totalDailyCell);
+
+  tfoot.appendChild(row);
+}
 
 function run(){
   for(let i =0;i< stores.length; i++){
@@ -199,4 +234,5 @@ function run(){
   }
 }
 run();
+
 
