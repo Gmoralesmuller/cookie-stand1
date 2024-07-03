@@ -91,11 +91,9 @@ table {
     border-collapse: collapse;
     font-size: smaller;
     align-content: center;
-    border: 2px solid black;
 }
 
 th, td {
-    border: 1px solid black;
     padding: 10px;
     text-align: center;
     vertical-align: middle;
@@ -104,3 +102,35 @@ th, td {
 th {
     font-weight: bold;
 }
+
+table tr:nth-child(1) {
+    background-color: #808080;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+tfoot {
+    background-color: #808080;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+   
+}
+
+table tr td:last-child {
+    background-color: #808080; 
+    font-weight: bold;
+    text-align: center; 
+    color: white;
+  }
+
+table tr:nth-child(n+2):nth-child(-n+6) td:nth-child(n+1):nth-child(-n+15) {
+    border: 1px solid black;
+    font-weight: bold;
+    background-color: salmon;
+}
+table tr:nth-child(n+2):nth-child(-n+6) td:first-child {
+    text-align: left; 
+  }
