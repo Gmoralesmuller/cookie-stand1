@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="sales">
     <header>
         <h1 class="encabezado">Welcome to Pat's Salmon Cookies!</h1>
         <nav class="navbar">
@@ -21,6 +21,20 @@
 
     </header>
     <main class="tabla">
+        <section id="form">
+            <fieldset>
+                <legend>Add a new Store to the table!!!</legend>
+                <label for="location_name">Location Name</label>
+                <input id="location_name" type="text">
+                <label for="min_custXhour">Minimum Customer Per Hour</label>
+                <input id="min_custXhour" type="number">
+                <label for="max_custXhour">Maximum Customer Per Hour</label>
+                <input id="max_custXhour" type="number">
+                <label for="avg_cookiesXsale">Average Cookies Per sale</label>
+                <input id="avg_cookiesXsale" type="number">
+                <button id="button_add">Click here to add!</button>
+            </fieldset>
+        </section>
         <section id="root">
         </section>
         <tfoot id="resumen">
